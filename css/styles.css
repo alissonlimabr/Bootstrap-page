@@ -1,3 +1,49 @@
-h1 {
-    color: rgb(255, 0, 0);
+/* Gerais */
+body {
+    font-family: 'roboto', 'sans-serif';
+ }
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 40px 0;
+}
+
+p. li {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+header, .navbar {
+    background-color: #424242;
+    /* background-image: linear-gradient(8deg, #ffffff 0%, #0300a0 100%); caso queira uma navbar gradient*/
+}
+
+
+#nav-conteiner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+   width: 60px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #FFF;
+}
+.navbar-brand:hover {
+    color: #FFF;
+}
+
+#navbar-links a {
+      color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .80rem;
 }
