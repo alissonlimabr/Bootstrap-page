@@ -98,3 +98,60 @@ height: 80vh;
 .carousel-indicators .active {
     background-color: #2b88b1;
 }
+
+/* Seção do "Sobre o  */
+
+.about-area {
+    background-color: #f9f9f9
+}
+
+.main-title {
+    color: #444;
+    /* shorthand property (cima,direita,abaixo,esquerda) */
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    /* Necessário definir position relative para que o main-title::after
+    apareça corretamente.
+    Verificar em um momento oportuno */
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #444;
+    /* Uppercase para o texto ficar em maiúsculo */
+    text-transform: uppercase;
+    /* Negrito */
+    font-weight: bold;
+}
+
+.description-title p {
+    text-align: justify;
+}
+
+.class-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: justify;
+}
+
+.class-list li{
+    /* Espaçamento entre a descrição e os checklists */
+    line-height: 30px;
+    padding-left: 0;
+}
+
+.class-list i{
+    color: #65daf9;
+    margin-right: 15px;
+}
