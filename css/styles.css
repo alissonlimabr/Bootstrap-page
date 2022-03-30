@@ -155,3 +155,27 @@ height: 80vh;
     color: #65daf9;
     margin-right: 15px;
 }
+
+/* Serviços */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-box i, h4 {
+    transition: .4s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* ">" verifica se o elemento está dentro do .service-box
+    Tanto os ícones, quanto os títulos irão mudar para azul
+*/
+.service-box:hover >i, .service-box:hover > h4 {
+    color: #65daf9;
+}
