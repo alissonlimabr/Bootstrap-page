@@ -92,7 +92,7 @@ height: 80vh;
     text-decoration: none;
     color: #fff;
     background-color: #65daf9;
-    border-color: #ffffff;
+    border-color: #aaa;
 }
 
 .carousel-indicators .active {
@@ -187,9 +187,9 @@ height: 80vh;
     padding: 0 40px;
 }
 
-.progressbar text {
+.progressbar-text {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 #data-area p {
