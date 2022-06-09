@@ -91,13 +91,28 @@ $(document).ready(function() {
         }
     });
 
-    circleA.animate(1.0);
-    circleB.animate(1.0);
-    circleC.animate(1.0);
-    circleD.animate(1.0);
+    // Iniciando loader de acordo com um ponto específico do Scroll da página
+    let dataAreaOffset = $('#data-area').offset();
+    let stop = 0;
+
+    $(window).scroll(function(e) {
+        // variável que guarda a posição de scroll que o usuário está
+        let scroll = $(window).scrollTop();
+        // animação inicia se a posição scroll for maior que a área especiicada e se já não tiver sido
+        // carregada anteriormente.
+        if (scroll > (dataAreaOffset.top - 500) && stop == 0) {
+  
+            circleA.animate(1.0);
+            circleB.animate(1.0);
+            circleC.animate(1.0);
+            circleD.animate(1.0);
+
+            // carrega a animação
+            stop = 1;
+        }
+    });
 
     // Parallax da página
-
     // carrega todas as imagens da página
     setTimeout(function() {
         $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'})
