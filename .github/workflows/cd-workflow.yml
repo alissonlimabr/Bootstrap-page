@@ -1,0 +1,21 @@
+name: Deploy Workflow
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+  workflow_call:    
+jobs:
+  
+  deploy-heroku:
+    name: Deploy Heroku
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.CHAVE_HEROKU}}
+          heroku_app_name: "bootstrap-alisson"
+          heroku_email: "alissonM.l@hotmail.com"
