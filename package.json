@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-page",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+    "postinstall": "ng build --aot --prod"
+  },
+  
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  }
+}
