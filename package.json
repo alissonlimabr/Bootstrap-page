@@ -2,12 +2,9 @@
   "name": "bootstrap-page",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "dev": "webpack serve",
     "start": "node server.js",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
-    "postinstall": "ng build --aot --prod"
+    "build": "webpack --mode production"
   },
   
   "dependencies": {
