@@ -3,7 +3,7 @@ name: Deploy Heroku
 on:
   push:
     branches:
-      - 'main'
+      - 'heroku'
   pull_request:
   workflow_call:    
 jobs:
