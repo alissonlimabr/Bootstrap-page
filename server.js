@@ -1,12 +1,11 @@
-const express = require('express');
 const path = require('path');
-const nomeApp = process.env.npm_package_name;
+const express = require('express');
+
 const app = express();
 
-app.use(express.static(`${__dirname}/dist/${nomeApp}`));
+app.use(express.static(path.join(__dirname, 'dist')));
+app.set('port', process.env.PORT || 3000);
 
-app.get('/*', (req, res) => {
-res.sendFile(path.join(`${__dirname}/dist/${nomeApp}/index.html`));
+const server = app.listen(app.get('port'), function() {
+  console.log('listening on port ', server.address().port);
 });
-
-app.listen(process.env.PORT || 4250);
