@@ -1,1 +1,4 @@
-<?php include_once('src/home.html'); ?>
+<?php
+  include_once("index.html");
+
+?>
